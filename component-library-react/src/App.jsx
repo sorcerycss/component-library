@@ -1,4 +1,5 @@
 import Badge from "./components/Badge"
+import Banner from "./components/Banner"
 
 function App() {
 
@@ -13,11 +14,17 @@ function App() {
     'pink']
 
   return (
+    <>
       <div style={{display: 'flex', gap: '8px'}}>
         {colors.map(color => (
           <Badge key={color} variant={color}>Badge</Badge>
         ))}
       </div>
+      <div>
+        <Banner>Banner here</Banner>
+      </div>
+    </>
+      
   )
 }
 

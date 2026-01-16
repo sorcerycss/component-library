@@ -1,12 +1,23 @@
-import './App.css'
 import Badge from "./components/Badge"
 
 function App() {
 
+  const colors = [
+    'gray',
+    'red',
+    'yellow',
+    'green',
+    'blue',
+    'indigo',
+    'purple',
+    'pink']
+
   return (
-    <>
-      <Badge>Badge here</Badge>
-    </>
+      <div style={{display: 'flex', gap: '8px'}}>
+        {colors.map(color => (
+          <Badge key={color} variant={color}>Badge</Badge>
+        ))}
+      </div>
   )
 }
 

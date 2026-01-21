@@ -33,14 +33,19 @@ const variants = {
     }
 }
 
-export default function Badge({children, variant}) {
+export default function Badge({children, variant, shape = 'square'}) {
 
     const currentVariant = variants[variant]
 
     return (
         <span style={{
             backgroundColor: currentVariant.backgroundColor,
-            color: currentVariant.color
+            color: currentVariant.color,
+            display: 'inline-block',
+            borderRadius: shape === 'pill' ? '12px' : '4px',
+            padding: '2px 12px',
+            fontSize: '14px',
+            fontWeight: '500',
             }}>
             {children}
         </span>

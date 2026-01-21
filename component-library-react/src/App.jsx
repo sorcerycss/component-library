@@ -20,9 +20,17 @@ function App() {
 
   return (
     <>
+    {/* Square badges */}
       <div style={{display: 'flex', gap: '8px'}}>
         {colors.map(color => (
-          <Badge key={color} variant={color}>Badge</Badge>
+          <Badge key={color} variant={color} shape="square">Badge</Badge>
+        ))}
+      </div>
+      <br></br>
+      {/* Pill badges */}
+      <div style={{display: 'flex', gap: '8px'}}>
+        {colors.map(color => (
+          <Badge key={color} variant={color} shape="pill">Badge</Badge>
         ))}
       </div>
       <br></br>

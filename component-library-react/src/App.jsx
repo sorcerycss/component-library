@@ -3,6 +3,8 @@ import Banner from "./components/Banner"
 import Card from "./components/Card"
 import cloudIcon from './assets/cloud-icon.png'
 import Testimonial from "./components/Testimonial"
+import personPhoto from './assets/person-photo.png'
+import logo from './assets/logo.png'
 
 function App() {
 
@@ -47,8 +49,12 @@ function App() {
         <Card icon={cloudIcon} title="Easy Deployment" text="Ac tincidunt sapien vehicula erat auctor pellentesque rhocus. Et magna sit morbi lobortis."/>
       </div>
       <br></br>
-      <div>
-        <Testimonial>Testimonial here</Testimonial>
+      <div style={{}}>
+        <Testimonial image={personPhoto} quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. "
+        name="May Andersons" title="Workcation, CTO"/>
+        <br></br>
+        <Testimonial logo={logo} quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. "
+        name="May Andersons" title="Workcation, CTO"/>
       </div>
     </>
       

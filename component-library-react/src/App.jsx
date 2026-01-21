@@ -34,11 +34,12 @@ function App() {
         ))}
       </div>
       <br></br>
+      {/* Banners components */}
       <div style={{display: 'flex', flexDirection: 'column', gap: '8px', maxWidth: '300px'}}>
-        <Banner variant="success" title="Congratulations!" text="Lorem ipsum"/>
-        <Banner variant="warning" title="Attention!" text="Lorem ipsum"/>
-        <Banner variant="error" title="There is a problem with your application" text="Lorem ipsum"/>
-        <Banner variant="neutral" title="Update available" text="Lorem ipsum"/>
+        <Banner variant="success" title="Congratulations!" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."/>
+        <Banner variant="warning" title="Attention!" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."/>
+        <Banner variant="error" title="There is a problem with your application" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."/>
+        <Banner variant="neutral" title="Update available" text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."/>
         <br></br>
         <Banner variant="success" title="Congratulations!" />
         <Banner variant="warning" title="Attention!" />

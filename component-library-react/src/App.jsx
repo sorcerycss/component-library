@@ -2,6 +2,7 @@ import Badge from "./components/Badge"
 import Banner from "./components/Banner"
 import Card from "./components/Card"
 import cloudIcon from './assets/cloud-icon.png'
+import Testimonial from "./components/Testimonial"
 
 function App() {
 
@@ -44,6 +45,10 @@ function App() {
         <Card icon={cloudIcon} title="Easy Deployment" text="Ac tincidunt sapien vehicula erat auctor pellentesque rhocus. Et magna sit morbi lobortis."/>
         <br></br>
         <Card icon={cloudIcon} title="Easy Deployment" text="Ac tincidunt sapien vehicula erat auctor pellentesque rhocus. Et magna sit morbi lobortis."/>
+      </div>
+      <br></br>
+      <div>
+        <Testimonial>Testimonial here</Testimonial>
       </div>
     </>
       

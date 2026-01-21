@@ -1,6 +1,7 @@
 import Badge from "./components/Badge"
 import Banner from "./components/Banner"
 import Card from "./components/Card"
+import cloudIcon from './assets/cloud-icon.png'
 
 function App() {
 
@@ -34,10 +35,15 @@ function App() {
         <Banner variant="neutral" title="Update available" />
       </div>
       <br></br>
-      <div>
-        <Card>Card here</Card>
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: '20px',
+        maxWidth: '384px'
+      }}>
+        <Card icon={cloudIcon} title="Easy Deployment" text="Ac tincidunt sapien vehicula erat auctor pellentesque rhocus. Et magna sit morbi lobortis."/>
         <br></br>
-        <Card>Card here (hower)</Card>
+        <Card icon={cloudIcon} title="Easy Deployment" text="Ac tincidunt sapien vehicula erat auctor pellentesque rhocus. Et magna sit morbi lobortis."/>
       </div>
     </>
       

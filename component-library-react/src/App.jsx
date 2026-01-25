@@ -1,8 +1,9 @@
 import Badge from "./components/Badge"
 import Banner from "./components/Banner"
 import Card from "./components/Card"
-import cloudIcon from './assets/cloud-icon.png'
 import Testimonial from "./components/Testimonial"
+
+import cloudIcon from './assets/cloud-icon.png'
 import personPhoto from './assets/person-photo.png'
 import logo from './assets/logo.png'
 

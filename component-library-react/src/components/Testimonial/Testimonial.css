@@ -1,0 +1,88 @@
+/* Container */
+.testimonial-container {
+    position: relative;
+    margin-top: 40px;
+    max-width: 376px;
+}
+
+.testimonial-container-img {
+    padding-top: 90px;
+    min-height: 654px;
+}
+
+.testimonial-container-logo {
+    min-height: 552px;
+}
+
+/* Overlapping person image */
+.testimonial-img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 344px;
+    height: 206px;
+    object-fit: cover;
+    padding-bottom: 40px;
+    z-index: 10;
+}
+
+/* Card */
+.testimonial-card {
+    padding: 74px 16px 64px;
+    position: relative;
+    z-index: 1;
+}
+
+.testimonial-card-img {
+    background-color: #2545B8;
+    color: #fff;
+}
+
+.testimonial-card-logo {
+    background-color: #F9FAFB;
+    color: #1F2937;
+}
+
+/* Content */
+.testimonial-logo {
+    display: block;
+    margin: 0 auto;
+    width: 180px;
+    margin-bottom: 24px;
+}
+
+.testimonial-quote-icon {
+    width: 48px;
+    margin-bottom: 24px;
+}
+
+.testimonial-quote {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.testimonial-name {
+    font-weight: 700;
+    margin: 24px 0 3px;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial-title {
+    font-weight: 500;
+    margin-bottom: 64px;
+    position: relative;
+    z-index: 2;
+}
+
+.testimonial-dots {
+    position: absolute;
+    bottom: 45px;
+    z-index: 0;
+    width: 202px;
+}
+
+/* Desktop */
+@media (min-width: 768px) {}

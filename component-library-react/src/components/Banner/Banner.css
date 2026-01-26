@@ -1,0 +1,50 @@
+.banner {
+    display: flex;
+    gap: 12px;
+    width: 896px;
+    padding: 16px;
+    border-radius: 6px;
+    /* align-items: flex-start; */
+}
+
+.banner-icon {
+    width: 20px;
+    height: 20px;
+    /* flex-shrink: 0; */
+}
+
+.banner-content {
+    /* flex: 1; */
+    /* border: 1px solid red */
+}
+
+.banner-title {
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
+.banner-text {
+    font-size: 14px;
+}
+
+/* Banner variants */
+
+.banner-success {
+    background-color: #ECFDF5;
+    color: #047857;
+}
+
+.banner-warning {
+    background-color: #FFFBEB;
+    color: #B45309;
+}
+
+.banner-error {
+    background-color: #FEF2F2;
+    color: #B45309;
+}
+
+.banner-neutral {
+    background-color: #EFF6FF;
+    color: #1C51B9;
+}

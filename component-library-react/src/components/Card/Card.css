@@ -1,0 +1,45 @@
+.card-container {
+    position: relative;
+    padding-top: 30px;
+}
+
+.card {
+    text-align: center;
+    color: #6B7280;
+    background: #F9FAFB;
+    border-radius: 8px;
+    padding: 60px 24px 32px;
+
+}
+
+.card-icon {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 80px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #111827;
+    margin-bottom: 20px;
+}
+
+.card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #6B7280;
+}
+
+/* Only apply hover if card-icon-hover class is present */
+.card-icon-hover {
+    cursor: pointer;
+}
+
+.card-icon-hover:hover {
+    transform: translateX(-50%) translateY(-4px);
+}

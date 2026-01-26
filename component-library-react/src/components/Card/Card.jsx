@@ -1,14 +1,16 @@
-export default function Card({ icon, title, text }) {
+import './Card.css'
+
+export default function Card({ icon, title, text, hover = false }) {
     return (
-        <div style={{
-            textAlign: 'center',
-            background: '#F9FAFB',
-            color: '#6B7280',
-            borderRadius: '8px',
-            }}>
-            <img src={icon} alt="Deploy icon" />
-            <div>{title}</div>
-            {text}
+        <div className='card-container'>
+            <div className='card'>
+                <img
+                src={icon}
+                alt='Deploy icon'
+                className={hover ? 'card-icon card-icon-hover' : 'card-icon'}  />
+                <div className='card-title'>{title}</div>
+                <div className='card-text'>{text}</div>
+            </div>
         </div>
     )
 }

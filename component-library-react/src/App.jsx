@@ -1,11 +1,14 @@
+import './App.css'
+
 import Badge from "./components/Badge"
 import Banner from "./components/Banner"
 import Card from "./components/Card"
 import Testimonial from "./components/Testimonial"
 
-import cloudIcon from './assets/cloud-icon.png'
+import cloudIcon from './assets/cloud-icon.svg'
+
 import personPhoto from './assets/person-photo.png'
-import logo from './assets/logo.png'
+import logo from './assets/logo.svg'
 
 function App() {
 
@@ -22,32 +25,23 @@ function App() {
   return (
     <>
     {/* Square badges component */}
-      <div style={{
-        display: 'flex',
-        gap: '8px',
-        marginBottom: '20px'}}>
+    <div className='component-section'>
+      <div className='badge-row'>
         {colors.map(color => (
           <Badge key={color} variant={color} shape="square">Badge</Badge>
         ))}
       </div>
       
       {/* Pill badges component */}
-      <div style={{
-        display: 'flex',
-        gap: '8px',
-        marginBottom: '20px'}}>
+      <div className='badge-row'>
         {colors.map(color => (
           <Badge key={color} variant={color} shape="pill">Badge</Badge>
         ))}
       </div>
-      
-      {/* Banners components */}
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '8px',
-        maxWidth: '300px',
-        marginBottom: '20px'}}>
+    </div>
+
+      {/* Banners component */}
+      <div className='component-section banner-column'>
         <Banner
         variant="success"
         title="Congratulations!"
@@ -78,36 +72,33 @@ function App() {
         title="Update available" />
       </div>
       
-      <div style={{
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '20px',
-        maxWidth: '384px'
-      }}>
-        <Card icon={cloudIcon}
+      <div className='card-column'>
+        <Card
+        icon={cloudIcon}
         title="Easy Deployment"
-        text="Ac tincidunt sapien vehicula erat auctor pellentesque rhocus. Et magna sit morbi lobortis."/>
-        <Card icon={cloudIcon}
+        text="Ac tincidunt sapien vehicula erat auctor pellentesque rhocus. Et magna sit morbi lobortis."
+        />
+        <Card
+        icon={cloudIcon}
         title="Easy Deployment"
-        text="Ac tincidunt sapien vehicula erat auctor pellentesque rhocus. Et magna sit morbi lobortis."/>
+        text="Ac tincidunt sapien vehicula erat auctor pellentesque rhocus. Et magna sit morbi lobortis."
+        hover={true}
+        />
       </div>
       
-      <div>
-        
+      <div className='testimonial-column'>
         <Testimonial
         image={personPhoto}
         quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. "
         name="May Andersons"
         title="Workcation, CTO"
         />
-        
         <Testimonial
         logo={logo}
-         quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. "
+        quote='“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”'
         name="May Andersons"
         title="Workcation, CTO"
         />
-
       </div>
     </>
   )

@@ -1,0 +1,29 @@
+.component-section {
+    margin-bottom: 40px;
+}
+
+.badge-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.banner-column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 896px;
+}
+
+.card-column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 384px;
+}
+
+.testimonial-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}

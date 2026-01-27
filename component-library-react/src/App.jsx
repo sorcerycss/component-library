@@ -6,7 +6,6 @@ import Card from "./components/Card"
 import Testimonial from "./components/Testimonial"
 
 import cloudIcon from './assets/cloud-icon.svg'
-
 import personPhoto from './assets/person-photo.png'
 import logo from './assets/logo.svg'
 
@@ -24,7 +23,7 @@ function App() {
 
   return (
     <>
-    {/* Square badges component */}
+    {/* Square badge component */}
     <div className='component-section'>
       <div className='badge-row'>
         {colors.map(color => (
@@ -32,7 +31,7 @@ function App() {
         ))}
       </div>
       
-      {/* Pill badges component */}
+      {/* Pill badge component */}
       <div className='badge-row'>
         {colors.map(color => (
           <Badge key={color} variant={color} shape="pill">Badge</Badge>
@@ -42,34 +41,78 @@ function App() {
 
       {/* Banners component */}
       <div className='component-section banner-column'>
-        <Banner
-        variant="success"
-        title="Congratulations!"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."/>
-        <Banner
-        variant="warning"
-        title="Attention!"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."/>
-        <Banner
-        variant="error"
-        title="There is a problem with your application"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."/>
-        <Banner
-        variant="neutral"
-        title="Update available"
-        text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid pariatur, ipsum similique veniam."/>
-        <Banner
-        variant="success"
-        title="Congratulations!" />
-        <Banner
-        variant="warning"
-        title="Attention!" />
-        <Banner
-        variant="error"
-        title="There is a problem with your application" />
-        <Banner
-        variant="neutral"
-        title="Update available" />
+
+        <Banner variant="success">
+          <Banner.Icon variant="success" />
+          <Banner.Content>
+            <Banner.Title>Congratulations!</Banner.Title>
+            <Banner.Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aliquid pariatur, ipsum similique veniam.
+            </Banner.Text>
+          </Banner.Content>
+        </Banner>
+
+        <Banner variant="warning">
+          <Banner.Icon variant="warning" />
+          <Banner.Content>
+            <Banner.Title>Attention!</Banner.Title>
+            <Banner.Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aliquid pariatur, ipsum similique veniam.
+            </Banner.Text>
+          </Banner.Content>
+        </Banner>
+
+         <Banner variant="error">
+          <Banner.Icon variant="error" />
+          <Banner.Content>
+            <Banner.Title>There is a problem with your application</Banner.Title>
+            <Banner.Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aliquid pariatur, ipsum similique veniam.
+            </Banner.Text>
+          </Banner.Content>
+        </Banner>
+
+         <Banner variant="neutral">
+          <Banner.Icon variant="neutral" />
+          <Banner.Content>
+            <Banner.Title>Update available</Banner.Title>
+            <Banner.Text>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Aliquid pariatur, ipsum similique veniam.
+            </Banner.Text>
+          </Banner.Content>
+        </Banner>
+
+        <Banner variant="success">
+          <Banner.Icon variant="success" />
+          <Banner.Content>
+            <Banner.Title>Congratulations!</Banner.Title>
+          </Banner.Content>
+        </Banner>
+
+        <Banner variant="warning">
+          <Banner.Icon variant="warning" />
+          <Banner.Content>
+            <Banner.Title>Attention!</Banner.Title>
+          </Banner.Content>
+        </Banner>
+
+        <Banner variant="error">
+          <Banner.Icon variant="error" />
+          <Banner.Content>
+            <Banner.Title>There is a problem with your application</Banner.Title>
+          </Banner.Content>
+        </Banner>
+
+        <Banner variant="neutral">
+          <Banner.Icon variant="neutral" />
+          <Banner.Content>
+            <Banner.Title>Update available</Banner.Title>
+          </Banner.Content>
+        </Banner>
       </div>
       
       <div className='card-column'>
@@ -97,18 +140,31 @@ function App() {
       </div>
       
       <div className='testimonial-column'>
-        <Testimonial
-        image={personPhoto}
-        quote="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit. "
-        name="May Andersons"
-        title="Workcation, CTO"
-        />
-        <Testimonial
-        logo={logo}
-        quote='“Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”'
-        name="May Andersons"
-        title="Workcation, CTO"
-        />
+        <Testimonial variant="image">
+          <Testimonial.Image src={personPhoto} />
+          <Testimonial.Card>
+            <Testimonial.QuoteIcon />
+            <Testimonial.Quote>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla
+                vitae laoreet augue. Amet feugiat est integer dolor auctor adipiscing nunc urna, sit.
+            </Testimonial.Quote>
+            <Testimonial.Name>May Andersons</Testimonial.Name>
+            <Testimonial.Title>Workcation, CTO</Testimonial.Title>
+          </Testimonial.Card>
+        </Testimonial>
+
+        <Testimonial variant="logo">
+          <Testimonial.Card>
+            <Testimonial.Logo src={logo} />
+            <Testimonial.Quote>
+                “Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo expedita
+                voluptas culpa sapiente alias molestiae. Numquam corrupti in laborum sed rerum et corporis.”
+            </Testimonial.Quote>
+            <Testimonial.Name>May Andersons</Testimonial.Name>
+            <Testimonial.Title>Workcation, CTO</Testimonial.Title>
+            <Testimonial.Dots />
+          </Testimonial.Card>
+        </Testimonial>
       </div>
     </>
   )

@@ -73,17 +73,27 @@ function App() {
       </div>
       
       <div className='card-column'>
-        <Card
-        icon={cloudIcon}
-        title="Easy Deployment"
-        text="Ac tincidunt sapien vehicula erat auctor pellentesque rhocus. Et magna sit morbi lobortis."
-        />
-        <Card
-        icon={cloudIcon}
-        title="Easy Deployment"
-        text="Ac tincidunt sapien vehicula erat auctor pellentesque rhocus. Et magna sit morbi lobortis."
-        hover={true}
-        />
+        <Card>
+          <Card.Icon src={cloudIcon} hover={false} />
+          <Card.Content>
+            <Card.Title>Easy Development</Card.Title>
+            <Card.Text>
+                Ac tincidunt sapien vehicula erat auctor pellentesque
+                rhocus. Et magna sit morbi lobortis.
+            </Card.Text>
+          </Card.Content>
+        </Card>
+
+        <Card>
+          <Card.Icon src={cloudIcon} hover={true} />
+          <Card.Content>
+            <Card.Title>Easy Development</Card.Title>
+            <Card.Text>
+                Ac tincidunt sapien vehicula erat auctor pellentesque
+                rhocus. Et magna sit morbi lobortis.
+            </Card.Text>
+          </Card.Content>
+        </Card>
       </div>
       
       <div className='testimonial-column'>

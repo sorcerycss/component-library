@@ -23,13 +23,12 @@
     width: 344px;
     height: 206px;
     object-fit: cover;
-    padding-bottom: 40px;
     z-index: 10;
 }
 
 /* Card */
 .testimonial-card {
-    padding: 74px 16px 64px;
+    padding: 94px 16px 24px;
     position: relative;
     z-index: 1;
 }
@@ -79,7 +78,8 @@
 
 .testimonial-dots {
     position: absolute;
-    bottom: 45px;
+    bottom: 0;
+    left: 0;
     z-index: 0;
     width: 202px;
 }

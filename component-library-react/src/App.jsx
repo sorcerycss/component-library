@@ -6,7 +6,8 @@ import Card from "./components/Card"
 import Testimonial from "./components/Testimonial"
 
 import cloudIcon from './assets/cloud-icon.svg'
-import personPhoto from './assets/person-photo.png'
+import personPhotoMobile from './assets/person-photo-mobile.png'
+import personPhotoDesktop from './assets/person-photo-desktop.png'
 import logo from './assets/logo.svg'
 
 function App() {
@@ -115,7 +116,7 @@ function App() {
         </Banner>
       </div>
       
-      <div className='card-column'>
+      <div className='component-section card-column'>
         <Card>
           <Card.Icon src={cloudIcon} hover={false} />
           <Card.Content>
@@ -141,8 +142,12 @@ function App() {
       
       <div className='testimonial-column'>
         <Testimonial variant="image">
-          <Testimonial.Image src={personPhoto} />
           <Testimonial.Card>
+            <Testimonial.Image
+            mobileSrc={personPhotoMobile}
+            desktopSrc={personPhotoDesktop}
+            />
+            <div>
             <Testimonial.QuoteIcon />
             <Testimonial.Quote>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed urna nulla
@@ -150,6 +155,7 @@ function App() {
             </Testimonial.Quote>
             <Testimonial.Name>May Andersons</Testimonial.Name>
             <Testimonial.Title>Workcation, CTO</Testimonial.Title>
+            </div>
           </Testimonial.Card>
         </Testimonial>
 

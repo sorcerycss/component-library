@@ -27,3 +27,7 @@
     flex-direction: column;
     gap: 40px;
 }
+
+.tooltip-column {
+    margin-top: 200px;
+}

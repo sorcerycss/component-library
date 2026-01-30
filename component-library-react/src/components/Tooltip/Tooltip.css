@@ -1,0 +1,45 @@
+.tooltip {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1em;
+    width: 384px;
+}
+
+.tooltip-icon {
+    align-self: flex-start;
+}
+
+.tooltip-title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.tooltip-text {
+    font-size: 14px;
+}
+
+.tooltip-btn {
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+/* Tooltip Variants */
+.tooltip-boldDark {
+    background: #262626;
+    color: #C7C7C7;
+}
+
+.tooltip-boldBlue {}
+
+.tooltip-boldPurple {}
+
+.tooltip-boldGreen {}
+
+.tooltip-lightDark {}
+
+.tooltip-lightBlue {}
+
+.tooltip-lightPurple {}
+
+.tooltip-lightGreen {}

@@ -4,6 +4,7 @@ import Badge from "./components/Badge"
 import Banner from "./components/Banner"
 import Card from "./components/Card"
 import Testimonial from "./components/Testimonial"
+import Tooltip from "./components/Tooltip"
 
 import cloudIcon from './assets/cloud-icon.svg'
 import personPhotoMobile from './assets/person-photo-mobile.png'
@@ -171,6 +172,20 @@ function App() {
             <Testimonial.Dots />
           </Testimonial.Card>
         </Testimonial>
+      </div>
+
+      <div className="component-section tooltip-column">
+        <Tooltip variant="boldDark">
+          <Tooltip.Icon variant="boldDark" />
+          <Tooltip.Content>
+            <Tooltip.Title>Archive notes</Tooltip.Title>
+            <Tooltip.Text>
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit oluptatum tenetur.
+            </Tooltip.Text>
+          </Tooltip.Content>
+          <Tooltip.Btn />
+        </Tooltip>
       </div>
     </>
   )

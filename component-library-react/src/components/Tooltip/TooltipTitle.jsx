@@ -1,3 +1,11 @@
+import { useContext } from "react"
+import { TooltipContext } from "./Tooltip"
+
 export default function TooltipTitle({children}) {
-    return <div className="tooltip-title">{children}</div>
+    const { variant } = useContext(TooltipContext)
+    return (
+        <div className={`tooltip-title tooltip-title-${variant}`}>
+            {children}
+        </div>
+    )
 }

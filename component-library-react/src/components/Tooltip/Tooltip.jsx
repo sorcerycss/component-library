@@ -21,7 +21,7 @@ export default function Tooltip({variant = "boldDark", children, autoReopen = tr
     if (!isVisible) return null
 
     return (
-        <TooltipContext.Provider value={{handleClose}}>
+        <TooltipContext.Provider value={{handleClose, variant}}>
             <div className={`tooltip tooltip-${variant}`}>
                 {children}
             </div>

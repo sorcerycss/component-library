@@ -176,7 +176,91 @@ function App() {
 
       <div className="component-section tooltip-column">
         <Tooltip variant="boldDark">
-          <Tooltip.Icon variant="boldDark" />
+          <Tooltip.Icon />
+          <Tooltip.Content>
+            <Tooltip.Title>Archive notes</Tooltip.Title>
+            <Tooltip.Text>
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit oluptatum tenetur.
+            </Tooltip.Text>
+          </Tooltip.Content>
+          <Tooltip.Btn />
+        </Tooltip>
+
+        <Tooltip variant="boldBlue">
+          <Tooltip.Icon />
+          <Tooltip.Content>
+            <Tooltip.Title>Archive notes</Tooltip.Title>
+            <Tooltip.Text>
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit oluptatum tenetur.
+            </Tooltip.Text>
+          </Tooltip.Content>
+          <Tooltip.Btn />
+        </Tooltip>
+
+        <Tooltip variant="boldPurple">
+          <Tooltip.Icon />
+          <Tooltip.Content>
+            <Tooltip.Title>Archive notes</Tooltip.Title>
+            <Tooltip.Text>
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit oluptatum tenetur.
+            </Tooltip.Text>
+          </Tooltip.Content>
+          <Tooltip.Btn />
+        </Tooltip>
+
+        <Tooltip variant="boldGreen">
+          <Tooltip.Icon />
+          <Tooltip.Content>
+            <Tooltip.Title>Archive notes</Tooltip.Title>
+            <Tooltip.Text>
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit oluptatum tenetur.
+            </Tooltip.Text>
+          </Tooltip.Content>
+          <Tooltip.Btn />
+        </Tooltip>
+
+        <Tooltip variant="lightDark">
+          <Tooltip.Icon />
+          <Tooltip.Content>
+            <Tooltip.Title>Archive notes</Tooltip.Title>
+            <Tooltip.Text>
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit oluptatum tenetur.
+            </Tooltip.Text>
+          </Tooltip.Content>
+          <Tooltip.Btn />
+        </Tooltip>
+
+        <Tooltip variant="lightBlue">
+          <Tooltip.Icon />
+          <Tooltip.Content>
+            <Tooltip.Title>Archive notes</Tooltip.Title>
+            <Tooltip.Text>
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit oluptatum tenetur.
+            </Tooltip.Text>
+          </Tooltip.Content>
+          <Tooltip.Btn />
+        </Tooltip>
+
+        <Tooltip variant="lightPurple">
+          <Tooltip.Icon />
+          <Tooltip.Content>
+            <Tooltip.Title>Archive notes</Tooltip.Title>
+            <Tooltip.Text>
+              Lorem ipsum dolor sit amet consectetur
+              adipisicing elit oluptatum tenetur.
+            </Tooltip.Text>
+          </Tooltip.Content>
+          <Tooltip.Btn />
+        </Tooltip>
+
+        <Tooltip variant="lightGreen">
+          <Tooltip.Icon />
           <Tooltip.Content>
             <Tooltip.Title>Archive notes</Tooltip.Title>
             <Tooltip.Text>

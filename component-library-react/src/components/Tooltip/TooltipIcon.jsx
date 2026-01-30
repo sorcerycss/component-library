@@ -1,3 +1,6 @@
+import { useContext } from "react"
+import { TooltipContext } from "./Tooltip"
+
 import TooltipIconBoldDark from "../../assets/tooltip-icon__bold-dark.svg"
 import TooltipIconBoldBlue from "../../assets/tooltip-icon__bold-blue.svg"
 import TooltipIconBoldPurple from "../../assets/tooltip-icon__bold-purple.svg"
@@ -19,7 +22,8 @@ const icons = {
     lightGreen: TooltipIconLightGreen
 }
 
-export default function TooltipIcon({variant = "boldDark", alt = "Tooltip Icon"}) {
+export default function TooltipIcon({alt = "Tooltip Icon"}) {
+    const { variant } = useContext(TooltipContext)
     return (
         <img
             src={icons[variant]}

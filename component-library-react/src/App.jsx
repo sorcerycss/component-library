@@ -5,6 +5,7 @@ import Banner from "./components/Banner"
 import Card from "./components/Card"
 import Testimonial from "./components/Testimonial"
 import Tooltip from "./components/Tooltip"
+import Toast from './components/Toast'
 
 import cloudIcon from './assets/cloud-icon.svg'
 import personPhotoMobile from './assets/person-photo-mobile.png'
@@ -271,6 +272,42 @@ function App() {
           <Tooltip.Btn />
         </Tooltip>
       </div>
+
+       <Toast variant="success">
+        <Toast.Icon />
+        <Toast.Content>
+          <Toast.Title>Success</Toast.Title>
+          <Toast.Text>Your work has been saved</Toast.Text>
+        </Toast.Content>
+        <Toast.Btn />
+       </Toast>
+
+       <Toast variant="information">
+        <Toast.Icon />
+        <Toast.Content>
+          <Toast.Title>Information</Toast.Title>
+          <Toast.Text>Please read updated information</Toast.Text>
+        </Toast.Content>
+        <Toast.Btn />
+       </Toast>
+
+       <Toast variant="warning">
+        <Toast.Icon />
+        <Toast.Content>
+          <Toast.Title>Warning</Toast.Title>
+          <Toast.Text>A network error was detected</Toast.Text>
+        </Toast.Content>
+        <Toast.Btn />
+       </Toast>
+
+       <Toast variant="error">
+        <Toast.Icon />
+        <Toast.Content>
+          <Toast.Title>Error</Toast.Title>
+          <Toast.Text>Please re-save your work again</Toast.Text>
+        </Toast.Content>
+        <Toast.Btn />
+       </Toast>
     </>
   )
 }

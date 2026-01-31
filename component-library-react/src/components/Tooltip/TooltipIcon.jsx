@@ -8,7 +8,7 @@ export default function TooltipIcon({}) {
             <svg
                 className="tooltip-icon-svg"
                 viewBox="0 0 24 24"
-                aria-hidden="true"
+                aria-hidden="true"  
                 focusable="false"
             >
                 <path

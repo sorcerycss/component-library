@@ -6,6 +6,8 @@
     width: 384px;
     border-radius: 8px;
     margin-bottom: 20px;
+    --tooltip-icon-color: currentColor;
+    --tooltip-close-color: currentColor;
 }
 
 .tooltip::after {
@@ -21,6 +23,13 @@
 
 .tooltip-icon {
     align-self: flex-start;
+    color: var(--tooltip-icon-color)
+}
+
+.tooltip-icon-svg {
+    display: block;
+    width: 24px;
+    height: 24px;
 }
 
 .tooltip-title {
@@ -40,8 +49,7 @@
     background: 0;
     padding: 4px;
     cursor: pointer;
-    color: inherit;
-    /* align-self: flex-start; */
+    color: var(--tooltip-close-color);
 }
 
 .tooltip-btn-icon {
@@ -54,7 +62,8 @@
 /* boldDark */
 .tooltip-boldDark {
     background: #262626;
-    color: #C7C7C7;
+    --tooltip-icon-color: #C7C7C7;
+    --tooltip-close-color: #C7C7C7;
 }
 
 .tooltip-title-boldDark {
@@ -68,7 +77,8 @@
 /* boldBlue */
 .tooltip-boldBlue {
     background: #1E40AF;
-    color: #D8D8D8;
+    --tooltip-icon-color: #7EA6F2;
+    --tooltip-close-color: #D8D8D8;
 }
 
 .tooltip-title-boldBlue {
@@ -82,7 +92,8 @@
 /* boldPurple */
 .tooltip-boldPurple {
     background: #A9229B;
-    color: #D8D8D8;
+    --tooltip-icon-color: #F462E6;
+    --tooltip-close-color: #D8D8D8;
 }
 
 .tooltip-title-boldPurple {
@@ -96,7 +107,8 @@
 /* boldGreen */
 .tooltip-boldGreen {
     background: #47AA5D;
-    color: #D8D8D8;
+    --tooltip-icon-color: #C1FFCF;
+    --tooltip-close-color: #D8D8D8;
 }
 
 .tooltip-title-boldGreen {

@@ -1,19 +1,20 @@
 import { useState, createContext } from 'react'
 import './Tooltip.css'
+import useToggle from '../../hooks/useToggle'
 
 const TooltipContext = createContext()
 export { TooltipContext }
 
 export default function Tooltip({variant = "boldDark", children, autoReopen = true}) {
 
-    const [isVisible, setIsVisible] = useState(true)
+    const [isVisible, toggle] = useToggle(true)
 
     const handleClose = () => {
-        setIsVisible(false)
+        toggle()
 
         if (autoReopen) {
             setTimeout(() => {
-                setIsVisible(true)
+                toggle()
             }, 1000)
         }
     }

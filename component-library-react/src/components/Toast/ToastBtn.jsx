@@ -1,8 +1,15 @@
+import { useContext } from "react"
+import { ToastContext } from "./Toast"
+
 export default function ToastBtn({ ariaLabel = "Close toast" }) {
+
+    const { onClose } = useContext(ToastContext)
+
     return (
         <button
             type="button"
             className="toast-btn"
+            onClick={onClose}
             aria-label={ariaLabel}
             >
                 <svg

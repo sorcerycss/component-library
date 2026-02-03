@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import './App.css'
 
 import Badge from "./components/Badge"
@@ -13,6 +14,8 @@ import personPhotoDesktop from './assets/person-photo-desktop.png'
 import logo from './assets/logo.svg'
 
 function App() {
+
+  const [showSuccess, setShowSuccess] = useState(false)
 
   const colors = [
     'gray',
@@ -300,14 +303,37 @@ function App() {
         <Toast.Btn />
        </Toast>
 
-       <Toast variant="error">
+
+
+        <div>
+          <button onClick={() => setShowSuccess(true)}>
+            Show toast
+          </button>
+
+          {showSuccess && (
+            <Toast
+            variant="error"
+            onClose={() => setShowSuccess(false)}
+            >
+              <Toast.Icon />
+              <Toast.Content>
+                <Toast.Title>Error</Toast.Title>
+                <Toast.Text>Please re-save your work again</Toast.Text>
+              </Toast.Content>
+              <Toast.Btn />
+            </Toast>
+          )}
+          
+        </div>
+
+       {/* <Toast variant="error">
         <Toast.Icon />
         <Toast.Content>
           <Toast.Title>Error</Toast.Title>
           <Toast.Text>Please re-save your work again</Toast.Text>
         </Toast.Content>
         <Toast.Btn />
-       </Toast>
+       </Toast> */}
     </>
   )
 }

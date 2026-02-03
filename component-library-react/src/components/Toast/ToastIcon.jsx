@@ -90,6 +90,8 @@ const icons = {
 
 export default function ToastIcon({ name }) {
     const toastContext = useContext(ToastContext)
+    // const { variant } = useContext(ToastContext) || {}
+    // "|| {}"" prevents a crash if the context is "null"
 
     const variant = toastContext?.variant
     // If toastContext exists, give me toastContext.variant

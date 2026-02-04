@@ -1,6 +1,7 @@
 import { useState, createContext } from 'react'
 import './Tooltip.css'
 import useToggle from '../../hooks/useToggle'
+// import useTimeout from '../../hooks/useTimeout'
 
 const TooltipContext = createContext()
 export { TooltipContext }

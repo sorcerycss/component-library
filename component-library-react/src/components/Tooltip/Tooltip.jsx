@@ -2,7 +2,7 @@ import { useState, createContext, useRef } from 'react'
 import './Tooltip.css'
 import useToggle from '../../hooks/useToggle'
 // import useTimeout from '../../hooks/useTimeout'
-import useClickOutside from '../../hooks/useClickOutside'
+// import useClickOutside from '../../hooks/useClickOutside'
 
 const TooltipContext = createContext()
 export { TooltipContext }
@@ -22,7 +22,7 @@ export default function Tooltip({variant = "boldDark", children, autoReopen = tr
         }
     }
 
-    useClickOutside(tooltipRef, handleClose, isVisible)
+    // useClickOutside(tooltipRef, handleClose, isVisible)
 
     if (!isVisible) return null
 
